@@ -1,4 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <file type="generation" id="tactical">
   <slide>
-    <part type="slide" id="
+    <part type="slide" id="tac-slide_glock26">
+      <img src="tac-slide_glock26.png" scale="1.0" />
+      <breakdown id="tac-slide" />
+      <generation pos="slide" baseX="1" />
+      <benefits dmgIncrease="0" rpsIncrease="0.5" recDecrease="0.10" />
+      <!-- Native IDs function by using digits to identify memory location
+              First Digit Location:
+                  0 - unusable object
+                  1 - physics object
+                  2 - projectile object
+                  3 - player object
+                  4 - weapon object
+                  5 - wearable object
+                  6 - trigger object
+                  7 - consumable object
+                  8 - generated object
+                  9 - generated part object
+
+              Second and Third Digit Location define are just custom object counts, are all unique.
+              
+              Fourth Digit Location:
+                  0 - standard type
+                  1 - quest type
+                  2 - static type (does nothing whatsoever) -->
+      <item id="tac-slide_glock26" nativeId="9010" name="Glock 26 Slide"
+    </part>
+    
+  </slide>
+</file>
