@@ -25,7 +25,7 @@
                   0 - standard type
                   1 - quest type
                   2 - static type (does nothing whatsoever) -->
-      <item id="tac-slide_glock26" nativeId="9010" name="Glock 26 Slide"
+      <item id="tac-slide_glock26" nativeId="9010" name="Glock 26 Slide" />
     </part>
     
   </slide>
