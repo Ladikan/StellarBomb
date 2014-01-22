@@ -43,21 +43,38 @@ $RTBPref::Loadout::Tertiary[11] = "";
 $RTBPref::Loadout::Tertiary[12] = "";
 $RTBPref::Loadout::Tertiary[13] = "";
 
-loadDatabases();
+$RTBPref::Loadout::PrimaryMaxNumber = 0;
+$RTBPref::Loadout::SecondaryMaxNumber = 0;
+$RTBPref::Loadout::TertiaryMaxNumber = 0;
 
-// +---------------------------------+
-// |  LIST THE PRIMARY ITEM CHOICES  |
-// +---------------------------------+
+for(%i = 0; %i <= 13; %i++)
+{
+	if(!$RTBPref::Loadout::Primary[%i] == "")
+	{
+		$RTBPref::Loadout::PrimaryMaxNumber++;
+	}
+	
+	if(!$RTBPref::Loadout::Secondary[%i] == "")
+	{
+		#RTBPref::Loadout::SecondaryMaxNumber++;
+	}
+	
+	if(!$RTBPref::Loadout::Tertiary[%i] == "")
+	{
+		#RTBPref::Loadout::TertiaryMaxNumber++;
+	}
+}
+
 function servercmdListPrimary(%client)
 {
-	if ($PrimaryItemNum == 0)
+	if ($RTBPref::Loadout::PrimaryMaxNumber == 0)
 	{
-		messageclient(%client, "","Sorry, there are no primary weapons to choose from!");
+		messageclient(%client, "","\c6There are no Primary Items available at the time.");
 		return;
 	}
 
-	for(%i = 0; %i < $PrimaryItemNum; %i++) 
-		messageclient(%client, "","(" @ %i+1 @ ")\c7" SPC $PrimaryItem[%i]);
+	for(%i = 0; %i < $RTBPref::Loadout::PrimaryMaxNumber; %i++) 
+		messageclient(%client, "","(" @ %i+1 @ ")\c7" SPC $RTBPref::Loadout::Primary[%i]);
 }
 
 
