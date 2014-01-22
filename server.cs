@@ -1,75 +1,48 @@
-// +------------------------+
-// |  CREATE THE DATABASES  |
-// +------------------------+
-function loadDatabases()
-{
+$RTBPref::Loadout::Primary[0] = "";
+$RTBPref::Loadout::Primary[1] = "";
+$RTBPref::Loadout::Primary[2] = "";
+$RTBPref::Loadout::Primary[3] = "";
+$RTBPref::Loadout::Primary[4] = "";
+$RTBPref::Loadout::Primary[5] = "";
+$RTBPref::Loadout::Primary[6] = "";
+$RTBPref::Loadout::Primary[7] = "";
+$RTBPref::Loadout::Primary[8] = "";
+$RTBPref::Loadout::Primary[9] = "";
+$RTBPref::Loadout::Primary[10] = "";
+$RTBPref::Loadout::Primary[11] = "";
+$RTBPref::Loadout::Primary[12] = "";
+$RTBPref::Loadout::Primary[13] = "";
 
-	// +------------------------------+
-	// |  LOAD PRIMARY ITEM DATABASE  |
-	// +------------------------------+
-	$PrimaryItemNum = 0;
-	if(isFile("Add-Ons/Weapon_GCatsFirearms/server.cs"))
-	{
-		$PrimaryItem[$PrimaryItemNum] = "gc_famasItem";
-		$PrimaryItemNum++;
-			
-		$PrimaryItem[$PrimaryItemNum] = "gc_fnscarItem";
-		$PrimaryItemNum++;
-	
-		$PrimaryItem[$PrimaryItemNum] = "gc_frf2Item";
-		$PrimaryItemNum++;
-	
-		$PrimaryItem[$PrimaryItemNum] = "gc_as50Item";
-		$PrimaryItemNum++;
-	
-	}
-	
+$RTBPref::Loadout::Secondary[0] = "";
+$RTBPref::Loadout::Secondary[1] = "";
+$RTBPref::Loadout::Secondary[2] = "";
+$RTBPref::Loadout::Secondary[3] = "";
+$RTBPref::Loadout::Secondary[4] = "";
+$RTBPref::Loadout::Secondary[5] = "";
+$RTBPref::Loadout::Secondary[6] = "";
+$RTBPref::Loadout::Secondary[7] = "";
+$RTBPref::Loadout::Secondary[8] = "";
+$RTBPref::Loadout::Secondary[9] = "";
+$RTBPref::Loadout::Secondary[10] = "";
+$RTBPref::Loadout::Secondary[11] = "";
+$RTBPref::Loadout::Secondary[12] = "";
+$RTBPref::Loadout::Secondary[13] = "";
 
+$RTBPref::Loadout::Tertiary[0] = "";
+$RTBPref::Loadout::Tertiary[1] = "";
+$RTBPref::Loadout::Tertiary[2] = "";
+$RTBPref::Loadout::Tertiary[3] = "";
+$RTBPref::Loadout::Tertiary[4] = "";
+$RTBPref::Loadout::Tertiary[5] = "";
+$RTBPref::Loadout::Tertiary[6] = "";
+$RTBPref::Loadout::Tertiary[7] = "";
+$RTBPref::Loadout::Tertiary[8] = "";
+$RTBPref::Loadout::Tertiary[9] = "";
+$RTBPref::Loadout::Tertiary[10] = "";
+$RTBPref::Loadout::Tertiary[11] = "";
+$RTBPref::Loadout::Tertiary[12] = "";
+$RTBPref::Loadout::Tertiary[13] = "";
 
-	// +--------------------------------+
-	// |  LOAD SECONDARY ITEM DATABASE  |
-	// +--------------------------------+
-	$SecondaryItemNum = 0;
-	if(isFile("Add-Ons/Weapon_GCatsFirearms/server.cs"))
-	{
-		$SecondaryItem[$SecondaryItemNum] = "gc_browningItem";
-		$SecondaryItemNum++;
-	
-		$SecondaryItem[$SecondaryItemNum] = "gc_browning_suppressedItem";
-		$SecondaryItemNum++;
-		
-		$SecondaryItem[$SecondaryItemNum] = "gc_mp5kItem";
-		$SecondaryItemNum++;
-	
-		$SecondaryItem[$SecondaryItemNum] = "gc_spas12Item";
-		$SecondaryItemNum++;
-	
-	}
-	
-
-
-	// +-------------------------------+
-	// |  LOAD TERTIARY ITEM DATABASE  |
-	// +-------------------------------+
-	$TertiaryItemNum = 0;
-	if(isFile("Add-Ons/Weapon_GCatsFirearms/server.cs"))
-	{
-		$TertiaryItem[$TertiaryItemNum] = "gc_grapefruitItem";
-		$TertiaryItemNum++;
-
-		$TertiaryItem[$TertiaryItemNum] = "gc_rpg7Item";
-		$TertiaryItemNum++;
-
-		$TertiaryItem[$TertiaryItemNum] = "gc_axeItem";
-		$TertiaryItemNum++;
-		
-	}
-
-}
-
-// +----------------------+
-// |  LOAD THE DATABASES  |
-// +----------------------+
 loadDatabases();
 
 // +---------------------------------+
